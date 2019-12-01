@@ -18,9 +18,16 @@ class QuestionTable extends Migration
             $table->longText('message');
             $table->integer('accuracy');
             $table->integer('person_id');
+            $table->integer('event_id');
+
             $table->foreign('person_id')
                 ->references('id')
                 ->on('person')
+                ->onDelete('cascade');
+
+            $table->foreign('event_id')
+                ->references('id')
+                ->on('event')
                 ->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();

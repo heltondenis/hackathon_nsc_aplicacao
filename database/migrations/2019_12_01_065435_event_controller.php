@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class PersonTable extends Migration
+class EventController extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class PersonTable extends Migration
      */
     public function up()
     {
-        Schema::create('person', function (Blueprint $table) {
+        Schema::create('event', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('email');
-            $table->string('lat');
-            $table->string('lon');
+            $table->longText('name');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -31,6 +28,6 @@ class PersonTable extends Migration
      */
     public function down()
     {
-        Schema::drop('person');
+        Schema::drop('event');
     }
 }

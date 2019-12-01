@@ -19,12 +19,16 @@ class QuestionController extends Controller
         $person = (!$person) ? $person : new Person();
         $person->name = $request->input('name');
         $person->email = $request->input('email');
+        $person->lat = $request->input('lar');
+        $person->lon = $request->input('lon');
         $person->save();
         
         
         $question = new Question();
 
+        $question = new Question();
         $question->message = $request->input('message');
+        $question->event = $request->input('event_id');
         $question->person_id = $person->id;
         $question->save();
       
