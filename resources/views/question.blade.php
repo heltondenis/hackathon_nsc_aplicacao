@@ -70,7 +70,7 @@
                <div class="navbar navbar-dark bg-dark shadow-sm">
                   <div class="container d-flex justify-content-between">
                      <a href="#" class="navbar-brand d-flex align-items-center">
-                     <strong>Aplicacao</strong>
+                     <strong>NS.Code</strong>
                      </a>
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
@@ -85,6 +85,7 @@
                      <p class="lead text-muted"></p>
                   </div>
                </section>
+               {{ dd(Request::route('questions')) }}
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
@@ -104,7 +105,6 @@
                             </div>
                             </small>
                          </p>
-                
                         </div>
                         </div>
                      </div>

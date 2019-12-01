@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('question');
 });
 
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
 Route::get('/questions', 'QuestionController@index');
