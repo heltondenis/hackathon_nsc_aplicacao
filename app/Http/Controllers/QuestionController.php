@@ -17,6 +17,7 @@ class QuestionController extends Controller
         $question->message = $request->input('message');
         $question->name = $request->input('name');
         $question->email = $request->input('email');
-
+        
+        $question->save();
     }
 }
