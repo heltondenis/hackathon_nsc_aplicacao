@@ -21,7 +21,7 @@ Route::get('/dashboard', function () {
 
 Route::get('/questions', 'QuestionController@index');
 
-Route::get('/submit', 'QuestionController@save');
+Route::post('/submit', 'QuestionController@save');
 
 Route::get('/event/add', 'EventController@save');
 

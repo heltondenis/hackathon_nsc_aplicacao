@@ -151,6 +151,9 @@
         <div class="input-group input-group-default mb-3">
             <input type="email" name="email" class="form-control" placeholder="Digite seu email..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
             <br><br>
+            <input type="text" name="lat" value="100" style="display:none"/>
+            <input type="text" name="lon" value="200" style="display:none"/>
+            <input type="text" name="event_id" value="1" style="display:none" />
         <div class="input-group">
             <div class="input-group-prepend">
                 <span class="input-group-text">Pergunta</span>

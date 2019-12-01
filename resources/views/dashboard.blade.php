@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="col-sm pause-circle">
-                <i class="fas fa-pause-circle" style="color:#fffff"></i>
+                <i class="fas fa-pause-circle" style="color:#fffff; margin-top:35px;"></i>
             </div>
         </div>
         <hr>
