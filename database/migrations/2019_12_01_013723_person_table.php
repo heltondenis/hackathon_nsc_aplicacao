@@ -16,7 +16,7 @@ class PersonTable extends Migration
         Schema::create('person', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('cpf');
+            $table->string('email');
             $table->timestamps();
             $table->softDeletes();
         });

@@ -9,7 +9,7 @@ class Person extends Model
     protected $table = 'person';
 
 
-    protected $fillable = ['name', 'cpf'];
+    protected $fillable = ['name', 'email'];
 
     public function question()
     {

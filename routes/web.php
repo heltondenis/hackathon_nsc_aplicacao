@@ -20,3 +20,5 @@ Route::get('/dashboard', function () {
 });
 
 Route::get('/questions', 'QuestionController@index');
+
+Route::get('/submit', 'QuestionController@index');
