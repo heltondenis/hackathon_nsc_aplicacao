@@ -16,18 +16,22 @@ class QuestionController extends Controller
 
         $person = Person::where('email', '=', $request->email)->get();
 
-        $person = ($person != null) ? $person : new Person();
+        $person = (!$person) ? $person : new Person();
         $person->name = $request->input('name');
         $person->email = $request->input('email');
         $person->lat = $request->input('lar');
         $person->lon = $request->input('lon');
         $person->save();
+        
+        
+        $question = new Question();
 
         $question = new Question();
         $question->message = $request->input('message');
         $question->event = $request->input('event_id');
         $question->person_id = $person->id;
-
         $question->save();
+      
+                           
     }
 }
