@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Question;
+use App\Person;
 
 class QuestionController extends Controller
 {
@@ -13,11 +14,16 @@ class QuestionController extends Controller
 
     public function save(Request $request){
 
-        $question = new Question();
+        $person = Person::where('email', '=', $request->email)->get();
+
+        $person = ($person != null) ? $person : new Person();
+        $person->name = $request->input('name');
+        $person->email = $request->input('email');
+        $person->save();
+
         $question->message = $request->input('message');
-        $question->name = $request->input('name');
-        $question->email = $request->input('email');
-        
+        $question->person_id = $person->id;
+
         $question->save();
     }
 }
