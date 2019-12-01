@@ -12,7 +12,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
-        
         for($i = 0; $i <20; $i++){
             DB::table('person')->insert([
                 'name' => Str::random(10),
