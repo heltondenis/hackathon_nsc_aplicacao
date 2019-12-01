@@ -144,22 +144,20 @@
       </div>
       <div class="modal-body">
         
-            @csrf
-            <div class="input-group input-group-default mb-3">
+        @csrf
+        <div class="input-group input-group-default mb-3">
             <input type="text" name="name" class="form-control" placeholder="Digite seu nome..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
-            </div>
-            <div class="input-group input-group-default mb-3">
+        </div>
+        <div class="input-group input-group-default mb-3">
             <input type="email" name="email" class="form-control" placeholder="Digite seu email..." aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
             <br><br>
-            <div class="input-group">
-                    <div class="input-group-prepend">
-                        
-                      <span class="input-group-text">Pergunta</span>
-                    </div>
-                    <textarea class="form-control" name="message" aria-label="With textarea"></textarea>
-                  </div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Pergunta</span>
             </div>
-        
+            <textarea class="form-control" name="message" aria-label="With textarea"></textarea>
+            </div>
+        </div>
       </div>
       <div class="modal-footer">
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>

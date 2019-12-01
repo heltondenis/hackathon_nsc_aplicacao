@@ -80,31 +80,36 @@
             </header>
             <main role="main">
                 <section class="jumbotron text-center">
-
                     <p class="lead text-muted"></p>
-    </div>
-    </section>
+                </div>
+            </section>
 
     <div class="container">
         <div class="row">
             <div class="col-sm">
                 <div class="card">
                     <div class="card-body">
-                        XXXXXX.
+                        Noticia 1.
+                        <hr>
+                         <span class="badge badge-secondary">32</span>
                     </div>
                 </div>
             </div>
             <div class="col-sm">
                 <div class="card">
                     <div class="card-body">
-                        XXXXXX.
+                        Noticia 2.
+                        <hr>
+                         <span class="badge badge-secondary">12</span>
                     </div>
                 </div>
             </div>
             <div class="col-sm">
                 <div class="card">
                     <div class="card-body">
-                        XXXXXX.
+                        Noticia 3.
+                        <hr>
+                         <span class="badge badge-secondary">2</span>
                     </div>
                 </div>
             </div>
@@ -127,9 +132,6 @@
             </div>
         </div>
     </div>
-
-    
-
     </main>
     <footer class="text-muted">
         <div class="container">
