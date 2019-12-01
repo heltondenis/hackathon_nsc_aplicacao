@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('question');
 });
+
+Route::get('/questions', 'QuestionController@index');
