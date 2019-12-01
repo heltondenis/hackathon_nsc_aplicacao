@@ -9,10 +9,10 @@ class Person extends Model
     protected $table = 'person';
 
 
-    protected $fillable = ['name', 'email'];
+    protected $fillable = ['name', 'email','lat','lon'];
 
     public function question()
     {
-        return $this->belongsToMany('App\Question')->as('question');
+        return $this->hasMany('App\Question')->as('question');
     }
 }

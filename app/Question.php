@@ -12,6 +12,11 @@ class Question extends Model
 
     public function person_id()
     {
-        return $this->hasOne('App\Person','foreign_key');
+        return $this->belongOne('App\Person','foreign_key');
+    }
+
+    public function event_id()
+    {
+        return $this->belongOne('App\Event','foreign_key');
     }
 }

@@ -18,3 +18,9 @@ Route::get('/', function () {
 Route::get('/questions', 'QuestionController@index');
 
 Route::get('/submit', 'QuestionController@save');
+
+Route::get('/event/add', 'EventController@save');
+
+Route::get('/event', 'EventController@get');
+
+Route::get('/event/add/question', 'EventController@addQuestion');
