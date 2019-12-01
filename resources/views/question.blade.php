@@ -98,14 +98,13 @@
                                 <a href="">
                                 <i class="fas fa-thumbs-down" style="color:black"></i>
                                 </a>
-                          
                                 <a href="">
                                     <i class="fas fa-thumbs-up" style="color:#00995D"></i>
                                 </a>
                             </div>
                             </small>
                          </p>
-                       
+                
                         </div>
                         </div>
                      </div>
